@@ -6,6 +6,7 @@ import HowItWorks from "../components/HowItWorks";
 import CTA from "../components/CTA";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import GoToTop from "../components/GoToTop";
 
 
 export default function LandingPage() {
@@ -20,6 +21,7 @@ export default function LandingPage() {
         <CTA />
         <Contact />
       </main>
+        <GoToTop />
       <Footer />
     </div>
   );
