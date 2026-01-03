@@ -7,6 +7,7 @@ import CTA from "../components/CTA";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import GoToTop from "../components/GoToTop";
+import Projects from "../components/Projects";
 
 
 export default function LandingPage() {
@@ -16,6 +17,7 @@ export default function LandingPage() {
       <main className="pt-24">
         <Hero />
         <Services />
+        <Projects />
         <WhyChooseUs />
         <HowItWorks />
         <CTA />

@@ -4,7 +4,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-      
+
       {/* Neon gradient blobs */}
       <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-purple-600/30 rounded-full blur-[160px]" />
       <div className="absolute -bottom-40 -right-40 w-[500px] h-[500px] bg-fuchsia-600/20 rounded-full blur-[160px]" />
@@ -14,7 +14,7 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
-        
+
         {/* Badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -51,9 +51,9 @@ export default function Hero() {
           transition={{ duration: 0.9 }}
           className="mt-6 max-w-2xl mx-auto text-gray-400 text-base md:text-lg"
         >
-          Clean, high-converting portfolio websites built with  
-          <span className="text-purple-400"> React </span> &  
-          <span className="text-purple-400"> Tailwind CSS</span>.  
+          Clean, high-converting portfolio websites built with
+          <span className="text-purple-400"> React </span> &
+          <span className="text-purple-400"> Tailwind CSS</span>.
           Low budget. Delivered within 24 hours.
         </motion.p>
 
@@ -64,31 +64,35 @@ export default function Hero() {
           transition={{ duration: 1 }}
           className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-5"
         >
+          {/* See My Works */}
           <a
-            href="#contact"
+            href="#projects"
             className="group inline-flex items-center gap-3 px-8 py-4 rounded-full
-            text-white bg-purple-600/30 border border-purple-500/40
-            shadow-[0_0_40px_rgba(168,85,247,0.6)]
-            hover:bg-purple-600/40 hover:shadow-[0_0_70px_rgba(168,85,247,0.9)]
-            transition"
+    text-white bg-purple-600/30 border border-purple-500/40
+    shadow-[0_0_40px_rgba(168,85,247,0.6)]
+    hover:bg-purple-600/40 hover:shadow-[0_0_70px_rgba(168,85,247,0.9)]
+    transition"
           >
-            Get Started
+            See My Works
             <ArrowRight
               size={18}
               className="group-hover:translate-x-1 transition"
             />
           </a>
 
+          {/* Hire Me */}
           <a
-            href="#about"
+            href="#contact"
             className="px-8 py-4 rounded-full text-gray-300
-            bg-white/5 border border-white/10
-            hover:text-white hover:border-purple-500/40
-            transition"
+    bg-white/5 border border-white/10
+    hover:text-white hover:border-purple-500/40
+    hover:shadow-[0_0_30px_rgba(168,85,247,0.4)]
+    transition"
           >
-            Learn More
+            Hire Me
           </a>
         </motion.div>
+
       </div>
     </section>
   );
